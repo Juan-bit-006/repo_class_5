@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Agregar js  inline</h2>
+    <button onclick="alert('Esto se considera mala practica')">Inline js</button>
+    <hr>
+
+    <h2>Agregar js mediante la etiqueta script</h2>
+    <button onclick="mostrarAlerta()">Script dentro de HTML</button>
+    <script>
+        function mostrarAlerta(){
+            alert('Script de js con la etiqueta <script> dentro del html');
+        }
+    </script>
+    <hr>
+
+    <h2>Agregar js dentro de un archivo externo</h2>
+    <button id="btnAlerta">Script fuera de HTML</button>
+
+    <hr>
+    <h2>Manipulacion del DOM</h2>
+    <hr>
+    <h2 id="titulo-org">Titulo originak</h2>
+    <p id="parrafo-org" class="parrafo">Este es el parrafo original</p>
+    <div id="conteiner"> <h3>contenido div</h3></div>
+    <button id="btn-act">Actualizar contenido</button>
+
+    <hr>
+    <h2>queryselector all</h2>
+    <div class="caja">caja 1</div>
+    <div class="caja">caja 2 </div>
+    <div class="caja">caja 3</div>
+    <div class="caja">caja 4</div>
+
+    <button id="btn-uno">cambiar color uno</button>
+    <button id="btn-dos">cambiar color de todos</button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
