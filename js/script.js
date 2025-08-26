@@ -131,10 +131,10 @@ const primeraCaja=document.querySelector(".caja");
 const todasCajas=document.querySelectorAll(".caja");
 
 botonUno.addEventListener("click",()=>{
-   primeraCaja.style.backgroundcolor="red";
+   primeraCaja.style.backgroundColor="red";
 });
 botonDos.addEventListener("click",()=>{
     todasCajas.forEach(caja=>{
-        caja.style.backgroundcolor="blue"
+        caja.style.backgroundColor="blue"
     });
 });
